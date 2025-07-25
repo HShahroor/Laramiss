@@ -1,0 +1,189 @@
+:root{--maincolor:#fcd462;
+--mainfont: "Prata", serif;
+--subfont:"Rubik", sans-serif;}
+a{text-decoration: none; color: #fff; }
+li{list-style-type: none;}
+.main-color{color: var(--maincolor);}
+.bg-main-color{background-color: var(--maincolor);}
+.mainfont{font-family: var(--mainfont);}
+.subfont{font-family: var(--subfont);}
+h1 {font-size: 4.2rem;}
+h2 {font-size: 3rem;}
+.letter-spacing{letter-spacing: 3px;}
+.bg-custom-gray{background-color: rgb(53,53,48);}
+body {font-family:var(--mainfont); font-weight: 700; font-size: 14px; color: #fff; background-color: #1C1B19;  }
+.top {background-color: #1C1B19;   height: 120px;}
+.navbar {background-color: rgb(53,53,48); margin-top: -70px; z-index: 3;}
+.navbar .logo-name h6 {font-family: var(--subfont) ; font-weight: 400;  letter-spacing: 2px;}
+.nav-link {color: #fff ; }
+.navbar-brand{ color:var(--maincolor)}
+.nav-link:focus, .nav-link:hover{
+    color:var(--maincolor);
+}
+.navbar-toggler{ border: 2PX solid rgb(64 64 59);}
+.bg-middle-section{
+    background-image: url(./Home_img/background2.webp);
+    height: 80vh;
+    background-repeat: no-repeat;
+}
+.Latest-Products .card{background-color: #fcd462; border: none;}
+.Pages-header{
+    background-image: url(./background.webp) ;
+    height: 50vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -440px;
+    position: relative;
+z-index: 2;
+margin-top: -50px
+
+}
+.Pages-header::before {
+content: "";
+position: absolute;
+inset: 0;
+background-color:rgb(53,53,48,0.7); 
+z-index: 1;
+
+}
+.Pages-header-content{
+position: relative;
+z-index: 4;
+}
+
+/* slider*/
+.slider-img {
+width: 16.6666%;
+}
+/* slider*/
+
+/* subscribe-section*/
+
+.subscribe-section {
+  background-color:rgba(53,53,48,255); /* نفس لون الخلفية */
+}
+
+.form-box {
+border: 15px solid #1C1B19;
+background-color:#1C1B19 ;
+max-width: 600px;
+width: 100%;
+}
+.subscribe-section p {
+  max-width: 700px; 
+  width: 100%;
+}
+
+.email-input{background-color: #1C1B19;   flex-grow: 1;  }
+.subscribe-section .btn{background-color: var(--maincolor); color: #fff;}
+.subscribe-section .btn:hover{background-color: #fff; color: #1C1B19;}
+
+/*subscribe-section*/
+
+/*footer*/
+footer {background-color: #1C1B19;}
+.footer-icone{background-color: rgba(33,33,33,255);}
+.footer-icone:hover{background-color: var(--maincolor);}
+/*footer*/
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color:var(--maincolor);
+  color: black;
+  width: 30px;
+  height: 30px;
+  font-size: 24px;
+  font-weight: bold;
+  z-index: 999;
+}
+
+
+/*details*/
+.color{width: 20px; height: 20px; border: none; outline: none; cursor: pointer;
+border-radius: 10px;}
+.color-one{background-color:rgb(189,32,49);}
+.color-two{background-color: var(--maincolor);}
+.color-three{background-color:rgba(57,57,197);}
+.color-four{background-color:rgb(50,152,50);}
+
+.Material{background-color:rgb(39,38,38) ; border: none; outline: none; cursor: pointer; color: #fff;}
+.Material:hover{background-color: var(--maincolor);}
+.cart-add{background-color:rgb(39,38,38) ; border: rgb(103,103,102) solid 1px; outline: none; cursor: pointer; color:rgb(103,103,102);}
+.cart-add:hover{color: var(--maincolor); border: var(--maincolor) solid 1px; }
+.pp{background-color: red;}
+
+.Related-Products{ background-color:rgba(53,53,48,255);}
+
+.home-footer{background-image: url(./Home_img/footer\ background.webp);}
+
+
+.card:hover .card-img-top{transform: scale(1.1) translateZ(0);}
+.card:hover .product-button{visibility: inherit;  transform: scale(1);}
+.label{position: absolute;
+top: 10px; left: 10px;}
+.card-img-top{transition: transform 0.5s ease-in-out; }
+.img-wrapper{overflow: hidden; background-color:#1C1B19;}
+.product-button{position:absolute;top: 10px; left: 185px;
+ visibility: hidden;  transform: scale(0.8);
+  transition: opacity 0.4s ease, transform 0.5s ease;}
+.old-price{text-decoration: line-through;}
+ .form-check-input:checked {
+  background-color: red;
+  border-color: red;
+}
+.form-check-input:checked::before {
+  color: green;
+}
+
+/*هون غلط*/
+/* شكل الصح دايمًا ظاهر */
+.custom-checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+}
+
+/* علامة الصح */
+.custom-checkbox::after {
+  content: '✔';
+  position: absolute;
+  top: 0;
+  left: 3px;
+  font-size: 16px;
+  color: white;
+}
+
+/* الحالة غير المفعّلة: أحمر */
+.custom-checkbox:not(:checked) {
+  background-color: red;
+}
+
+/* الحالة المفعّلة: أخضر */
+.custom-checkbox:checked {
+  background-color: green;
+}
+/*في غلط
+
+
+/*login*/
+.login-bg{
+  background-image: url(./login.webp/login.webp);
+  height: 99vh;
+    background-repeat: no-repeat;
+    background-position: right center;
+  
+}
+
+/*login*/
+
+.a-home:hover{color: var(--maincolor);}
+
+.border-main-color{border: #fcd462 solid 1px;}
+.Category:hover{background-color: var(--maincolor);}
