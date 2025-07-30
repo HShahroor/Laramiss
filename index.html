@@ -20,13 +20,13 @@
 
 <body>
 
-  <div class="top">
+  <div class="top d-none d-sm-block">
     <div class="container-fluid p-1 ">
       <div class="row mt-2 subfont  ">
-        <div class="col-lg-8  mx-4 fw-normal">
-          <a href="#" class="hovertomaincolor">Need Help?Call 1234 567 890</a>
+        <div class="col-lg-8 col-sm-12 d-flex justify-content-lg-start justify-content-center  mx-4 fw-normal">
+          <a href="#" class="hovertomaincolor ">Need Help?Call 1234 567 890</a>
         </div>
-        <div class="col-lg-3 col-6 ms-auto d-flex justify-content-end justify-content-center mx-4">
+        <div class="col-lg-3 col-sm-12 ms-auto d-flex justify-content-lg-end justify-content-center mx-4">
           <div class="d-flex gap-3 flex-nowrap  ">
             <a href="#" class="hovertomaincolor">MyAccount</a>
             <div class="vr " style="height: 20px; width: 3px;"></div>
@@ -43,104 +43,119 @@
     </div>
   </div>
 
-  <nav class="navbar navbar-expand-lg py-3 position-sticky top-0 " data-bs-theme="dark ">
+  <nav class="navbar navbar-expand-lg py-3 position-sticky top-0 bg-custom-gray " data-bs-theme="dark ">
 
     <div class="container gap-4 ">
 
-        <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
-      aria-controls="offcanvasWithBothOptions">
-      <div class="d-flex me-auto">
-        <img src="./icone/bar.svg" alt="menu">
-      </div>
-    </button>
+      <button class="btn d-none d-lg-block" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+        <div class="d-flex me-auto ">
+          <img src="./icone/bar.svg" alt="menu">
+        </div>
+      </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto  mb-2  mb-lg-0  gap-3 ">
 
           <li class="nav-item">
-            <a class="nav-link " aria-current="page" href="./index.html">Home</a>
+            <a class="nav-link hovertomaincolor" aria-current="page" href="./index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./Categories.html">Categories</a>
+            <a class="nav-link hovertomaincolor" href="./Categories.html">Categories</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./Diamond.html">Diamond</a>
+            <a class="nav-link hovertomaincolor" href="./Diamond.html">Diamond</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./Bolg.html">Bolg</a>
+            <a class="nav-link hovertomaincolor" href="./Bolg.html">Bolg</a>
           </li>
         </ul>
       </div>
       <a class="navbar-brand d-flex gap-3" href="./index.html">
         <img src="./icone/logo.svg" alt="Laramiss LUXURY PIECES ">
-        <div class="logo-name ">
+        <div class=" ">
           <h3 class="mb-0">Laramiss</h3>
-          <h6>LUXURY PIECES</h6>
+          <h6 class="subfont fw-normal letter-spacing-2">LUXURY PIECES</h6>
         </div>
       </a>
-      <button class="navbar-toggler rounded-0 p-3 " data-bs-theme="dark" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-3">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="./Diamond.html">Accessories</a>
+            <a class="nav-link hovertomaincolor" aria-current="page" href="./Diamond.html">Accessories</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./Categories.html">Pages</a>
+            <a class="nav-link hovertomaincolor" href="./Categories.html">Pages</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./Shop.html">Shop</a>
+            <a class="nav-link hovertomaincolor" href="./Shop.html">Shop</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./Contact.html">Contact</a>
+            <a class="nav-link hovertomaincolor" href="./Contact.html">Contact</a>
           </li>
         </ul>
       </div>
+
+      <button class="navbar-toggler rounded-0 p-3 " data-bs-theme="dark" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent " aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon "></span>
+      </button>
+
     </div>
   </nav>
 
-  <div class="offcanvas bg-custom-gray offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
-  aria-labelledby="offcanvasWithBothOptionsLabel">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"></h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-  <div>
-    <h5 class="text-light">Our pages</h5>
-       <ul class="list-unstyled text-white-50">
-      <li><a href="#" class="nav-link">About Us</a></li>
-      <li><a href="#" class="nav-link">Classification</a></li>
-      <li><a href="#" class="nav-link">Shop</a></li>
-    </ul>
+  <div class="offcanvas bg-custom-gray offcanvas-start " data-bs-scroll="true" tabindex="-1"
+    id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"></h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div>
+        <h5 class="text-light">Our pages</h5>
+        <ul class="list-unstyled text-white-50">
+          <li><a href="#" class="nav-link">About Us</a></li>
+          <li><a href="#" class="nav-link">Classification</a></li>
+          <li><a href="#" class="nav-link">Shop</a></li>
+        </ul>
 
-  </div>
- 
-  </div>
-</div>
+      </div>
 
-  <header class="">
+    </div>
+  </div>
+
+  <header>
     <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active " data-bs-interval="10000">
-          <img src="./home-head1.webp" class="d-block  w-100" style="height: 900px; object-fit: cover;" alt="...">
-          <div class="carousel-caption d-none d-md-block" style="bottom: 40%" ;>
-            <span class="text-uppercase subfont">Best summer sale is here</span>
-            <h2>New Design Ring For You</h2>
-            <button class="bg-main-color text-uppercase border-0 fw-bold text-light subfont py-3 px-5 ">explor
+      <div class="overlay"></div>
+      <div class="carousel-inner ">
+        <div class="carousel-item active  " data-bs-interval="10000">
+          <img src="./home-head1.webp" class="d-block  w-100" style="height: 900px; object-fit: cover;"
+            alt="Laramiss LUXURY PIECES">
+          <div class="carousel-caption ">
+            <span class="text-uppercase subfont letter-spacing">Best summer sale is here</span>
+            <h2 class="display-1  text-center">New Design Ring For You</h2>
+            <button
+              class="bg-main-color  hovertransparentcustombg text-uppercase border-0 fw-bold letter-spacing text-light subfont py-3 px-5 ">explor
               more</button>
-            <button class="bg-main-color text-uppercase border-0 fw-bold text-light subfont py-3 px-5 ">Buy now</button>
+            <button
+              class="bg-transparent-custom hovertomaincolorbg  text-uppercase border border-secondary  fw-bold text-light subfont py-3 px-5 ">Buy
+              now</button>
           </div>
-
         </div>
-        <div class="carousel-item" data-bs-interval="2000">
-          <img src="./home-head2.webp" class="d-block w-100" style="height: 900px; object-fit: cover;" alt="...">
+        <div class="carousel-item" data-bs-interval="10000">
+          <img src="./home-head2.webp" class="d-block w-100" style="height: 900px; object-fit: cover;"
+            alt="Laramiss LUXURY PIECES">
+          <div class="carousel-caption">
+            <span class="text-uppercase subfont letter-spacing">Jewels that define you</span>
+            <h2 class="display-1 ">The Perfect Jewels For You </h2>
+            <a href="#" class="bg-main-color hovertransparentcustombg text-uppercase  fw-bold letter-spacing text-light subfont py-3 px-5 ">explor
+              more</a>
+            <a href="#"
+              class="bg-transparent-custom hovertomaincolorbg  text-uppercase border border-secondary  fw-bold text-light subfont py-3 px-5 ">Buy
+              now</a>
+          </div>
         </div>
-
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
         data-bs-slide="prev">
@@ -164,29 +179,30 @@
       <div class="row g-4 justify-content-center  align-items-center text-center">
         <div class="col-md-6 col-lg-3 gap-2">
           <div class="New-Rings overlay-black  d-flex gap-3 flex-column align-items-center justify-content-center">
-          <img src="./Home_img/ring.svg" class="img-fluid  p-1" alt="New Rings">
-          <h4>New Rings</h4>
-        </div>
-        </div>
-        
-        <div class="col-md-6 col-lg-3">
-          <div class="Copper-Bangle overlay-black  d-flex gap-3 flex-column align-items-center justify-content-center">
-          <img src="./Home_img/Ankle.svg" class="img-fluid  p-1" alt="New Rings">
-           <h4>Copper Bangle</h4>
-           </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="Big-Necklace overlay-black  d-flex gap-3 flex-column align-items-center justify-content-center">
-          <img src="./Home_img/nackles.svg" class="img-fluid p-1" alt="New Rings">
-           <h4>Big Necklace</h4>
-           </div>
+            <img src="./Home_img/ring.svg" class="img-fluid  p-1" alt="New Rings">
+            <h4>New Rings</h4>
+          </div>
         </div>
 
         <div class="col-md-6 col-lg-3">
-          <div class="Crystal-Jewelry overlay-black  d-flex gap-3 flex-column align-items-center justify-content-center">
-          <img src="./icone/logo.svg" class="img-fluid  p-1" alt="New Rings">
-           <h4>Crystal Jewelry</h4>
+          <div class="Copper-Bangle overlay-black  d-flex gap-3 flex-column align-items-center justify-content-center">
+            <img src="./Home_img/Ankle.svg" class="img-fluid  p-1" alt="New Rings">
+            <h4>Copper Bangle</h4>
+          </div>
         </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="Big-Necklace overlay-black  d-flex gap-3 flex-column align-items-center justify-content-center">
+            <img src="./Home_img/nackles.svg" class="img-fluid p-1" alt="New Rings">
+            <h4>Big Necklace</h4>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div
+            class="Crystal-Jewelry overlay-black  d-flex gap-3 flex-column align-items-center justify-content-center">
+            <img src="./icone/logo.svg" class="img-fluid  p-1" alt="New Rings">
+            <h4>Crystal Jewelry</h4>
+          </div>
         </div>
 
       </div>
@@ -203,7 +219,8 @@
             </div>
             <div class="col-6 ">
               <h3 class="py-5">Diamond’s Haven</h3>
-              <a href="./Shop.html" class="bg-main-color subfont fw-bold letter-spacing text-uppercase border-0 py-4 px-5 text-light">view
+              <a href="./Shop.html"
+                class="bg-main-color subfont fw-bold letter-spacing text-uppercase border-0 py-4 px-5 text-light">view
                 details</a>
             </div>
           </div>
@@ -567,7 +584,8 @@
           <div class="bg-custom-gray p-5 ">
             <img src="./Home_img/earrings.svg">
             <h3><a href="#">Artifical Earings</a></h3>
-            <p class="subfont text-white-50 fw-normal">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit
+            <p class="subfont text-white-50 fw-normal">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+              posuere cubilia Curae; Donec velit
               neque, auctor sit amet</p>
           </div>
         </div>
@@ -576,7 +594,8 @@
           <div class="bg-custom-gray p-5">
             <img src="./Home_img/Curb.svg">
             <h3><a href="#">Bracelet Curb</a></h3>
-            <p class="subfont text-white-50 fw-normal">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit
+            <p class="subfont text-white-50 fw-normal">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+              posuere cubilia Curae; Donec velit
               neque, auctor sit amet</p>
           </div>
         </div>
@@ -585,7 +604,8 @@
           <div class="bg-custom-gray p-5">
             <img src="./Home_img/Azrouel.svg">
             <h3><a href="#">Azrouel Variable</a></h3>
-            <p class="subfont text-white-50 fw-normal">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit
+            <p class="subfont text-white-50 fw-normal">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+              posuere cubilia Curae; Donec velit
               neque, auctor sit amet</p>
           </div>
         </div>
@@ -594,7 +614,8 @@
           <div class="bg-custom-gray p-5">
             <img src="./Home_img/Ankle.svg">
             <h3><a href="#">Ankle Bracelet</a></h3>
-            <p class="subfont text-white-50 fw-normal">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit
+            <p class="subfont text-white-50 fw-normal">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+              posuere cubilia Curae; Donec velit
               neque, auctor sit amet</p>
           </div>
         </div>
@@ -603,7 +624,8 @@
           <div class="bg-custom-gray p-5">
             <img src="./Home_img/ring.svg">
             <h3><a href="#">Pointer Ring</a></h3>
-            <p class="subfont text-white-50 fw-normal">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit
+            <p class="subfont text-white-50 fw-normal">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+              posuere cubilia Curae; Donec velit
               neque, auctor sit amet</p>
           </div>
         </div>
@@ -612,7 +634,8 @@
           <div class="bg-custom-gray p-5">
             <img src="./Home_img/nackles.svg">
             <h3><a href="#">Copper Necklace</a></h3>
-            <p class="subfont text-white-50 fw-normal">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit
+            <p class="subfont text-white-50 fw-normal">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+              posuere cubilia Curae; Donec velit
               neque, auctor sit amet</p>
           </div>
         </div>
@@ -718,9 +741,10 @@
             </div>
           </div>
         </div>
+
         <div class="p-3 col-lg-6 order-3 order-lg-2">
           <h4 class="p-3">New Collections</h4>
-          <ul class="row subfont fw-normal ">
+          <ul class="row subfont fw-normal  ">
             <li class="col-12 col-md-6 mb-3 p-1">
               <a href="#" class="d-flex align-items-center gap-2">
                 <img src="./icone/logo.svg" width="25" height="30">

@@ -1,100 +1,119 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Prata&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Prata&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
 
     <!-- bootstrap 5.3 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-<!-- css custom -->
-<link rel="stylesheet" href="./main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- css custom -->
+    <link rel="stylesheet" href="./main.css">
 </head>
+
 <body>
-    <div class="top">
+    <div class="top ">
         <div class="container-fluid p-1 ">
             <div class="row mt-2 subfont fw-normal">
-                <div class="col-md-8 col-6  mx-4">
-                    <p>Free Shipping On All Domestic Orders</p>
+                <div class="col-lg-8 col-md-12 d-flex justify-content-lg-start justify-content-center  mx-4 fw-normal">
+                    <p class="m-0">Free Shipping On All Domestic Orders</p>
                 </div>
-                <div class="col-md-3 ms-auto d-flex justify-content-end justify-content-center mx-4">
-                    <div class="d-flex gap-5 flex-nowrap ">
-                        <p> Mon - Sat 9.00 - 18.00</p>
-                        <p> Mon - Sat 9.00 - 18.00</p>
+                <div class="col-lg-3 col-md-12 ms-auto d-flex justify-content-lg-end justify-content-center mx-4">
+                    <div class="d-flex gap-5 flex-nowrap text-nowrap ">
+                        <p> Mon-Sat 9.00-18.00</p>
+                        <p> Mon-Sat 9.00-18.00</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <nav class="navbar navbar-expand-lg py-4 position-sticky top-0 mx-5 rounded-0" data-bs-theme="dark">
-<div class="container-fluid ">
-    <a class="navbar-brand d-flex gap-3" href="./index.html">
-    <img src="./icone/logo.svg" alt="Laramiss LUXURY PIECES " >
-    <div class="logo-name ">
-    <h3 class="mb-0">Laramiss</h3>
-    <h6>LUXURY PIECES</h6>
-    </div>
-    </a>
-    <button class="navbar-toggler rounded-0 p-3 "data-bs-theme="dark" type="button"  data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-    </button>
+    <nav class="navbar bg-custom-gray navbar-expand-lg py-4  position-sticky top-0 mx-4 rounded-0" data-bs-theme="dark">
+        <div class="container  ">
+            <a class="navbar-brand d-flex gap-3" href="./index.html">
+                <img src="./icone/logo.svg" alt="Laramiss LUXURY PIECES ">
+                <div class="logo-name ">
+                    <h3 class="mb-0">Laramiss</h3>
+                    <h6 class="subfont letter-spacing-2 fw-normal">LUXURY PIECES</h6>
+                </div>
+            </a>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav m-auto mb-2 mb-lg-0 gap-3">
-            <li class="nav-item">
-        <a class="nav-link " aria-current="page" href="./index.html">Home</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" href="./Categories.html">Categories</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" href="./Diamond.html">Diamond</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" href="./Bolg.html">Bolg</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" href="./Categories.html">Pages</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" href="./Shop.html">Shop</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" href="./Contact.html">Contact</a>
-        </li>
-    </ul>
-    </div>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav m-auto mb-2 mb-lg-0 gap-3">
-        <li class="nav-item">
-        <a class="nav-link" href="./login.html"><img src="./icone/user.svg" alt="user icone"></a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" href="./Diamond.html"><img src="./icone/search.svg" alt="search icone"></a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" href="./Bolg.html">  <img src="./icone/bar.svg" alt="menu"></a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" href="./Pages.html"><img src="./icone/bag.svg" alt="cart"></a>
-        </li>
-    </ul>
-    </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0 gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link  hovertomaincolor " aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  hovertomaincolor" href="./Categories.html">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  hovertomaincolor" href="./Diamond.html">Diamond</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hovertomaincolor" href="./Bolg.html">Bolg</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hovertomaincolor" href="./Categories.html">Pages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hovertomaincolor" href="./Shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hovertomaincolor" href="./Contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
 
-</div>
-</nav>
-<header class="Pages-header ">
-    <div class="Pages-header-content d-flex flex-column align-items-center justify-content-center h-100">
-    <span class="subfont letter-spacing">DESIGNER JEWELRY</span>
-    <h2 class="page-title ">Shop Detail</h2>
-    </div>
-</header>
+            <div class="d-none d-xl-flex">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0 gap-3 ">
+                    <li class="nav-item custom-border   ">
+                        <a class="nav-link p-3 hovertomaincolorbg img-fluid" href="./login.html"><img src="./icone/user.svg" alt="user icone"></a>
+                    </li>
+                    <li class="nav-item custom-border">
+                        <a class="nav-link p-3 hovertomaincolorbg img-fluid" href="./Diamond.html"><img src="./icone/search.svg" alt="search icone"></a>
+                    </li>
+                    <li class="nav-item custom-border">
+                        <a class="nav-link p-3 hovertomaincolorbg img-fluid" href="./Bolg.html"> <img src="./icone/bar.svg" alt="menu"></a>
+                    </li>
+                    <li class="nav-item custom-border ">
+                        <a class="nav-link p-3 bag position-relative hovertomaincolorbg img-fluid" href="./Pages.html"><img src="./icone/bag.svg" alt="cart"></a>
+                    </li>
+                </ul>
+            </div>
+
+            <button class="navbar-toggler rounded-0 p-3 " data-bs-theme="dark" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+        </div>
+    </nav>
+
+    <header class="Pages-header" id="top">
+        <div class="Pages-header-content d-flex flex-column align-items-center justify-content-center h-100 gap-4 ">
+            <span class="subfont letter-spacing">DESIGNER JEWELRY</span>
+            <h1 class="page-title display-2 ">Shop Details</h1>
+        </div>
+    </header>
+
+    <section class="bg-custom-gray position-absolute top-80 start-50 translate-middle z-2 subfont ">
+        <div class="d-flex py-3 px-4 gap-3 align-items-center  ">
+            <a href="./index.html" class="m-0 hovertomaincolor">Home</a>
+            <img src="./icone/diamond.svg" alt="icon">
+            <p class="main-color  m-0">Shop</p>
+        </div>
+    </section>
 
 <section class="Product-details">
     <div class="container">
