@@ -1,50 +1,118 @@
-:root{--maincolor:#fcd462;
---mainfont: "Prata", serif;
---subfont:"Rubik", sans-serif;}
-a{text-decoration: none; color: #fff; }
-li{list-style-type: none;}
-body {font-family:var(--mainfont); color: #fff; background-color: #1C1B19; font-weight: 700; }
+:root {
+  --maincolor: rgb(252, 212, 98);
+  --mainfont: "Prata", serif;
+  --subfont: "Rubik", sans-serif;
+}
 
-.main-color{color: var(--maincolor);}
-.bg-main-color{background-color: var(--maincolor);}
-.subfont{font-family: var(--subfont);}
-.letter-spacing-2{letter-spacing: 2px;}
-.letter-spacing{letter-spacing: 3px;}
-.bg-custom-gray{background-color: rgb(53,53,48);}
-.hovertomaincolor:hover{color: var(--maincolor); }
-.hovertomaincolorbg:hover{background-color: var(--maincolor);}
-.custom-border{border: rgba(64,64,59,255) solid 2px;}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  font-family: var(--mainfont);
+  color: #fff;
+  background-color: #1C1B19;
+  font-weight: 700;
+}
+
+.main-color {
+  color: var(--maincolor);
+}
+
+.bg-main-color {
+  background-color: var(--maincolor);
+}
+
+.bg-second-color {
+  background-color: #1C1B19;
+}
+
+.subfont {
+  font-family: var(--subfont);
+}
+
+.letter-spacing-2 {
+  letter-spacing: 2px;
+}
+
+.letter-spacing {
+  letter-spacing: 3px;
+}
+
+.bg-custom-gray {
+  background-color: rgb(53, 53, 48);
+}
+
+.hovertomaincolor:hover {
+  color: var(--maincolor);
+}
+
+.hovertomaincolorbg:hover {
+  background-color: var(--maincolor);
+}
+
+.custom-border {
+  border: rgba(64, 64, 59, 255) solid 2px;
+}
 
 /*top*/
-.top { height: 120px;}
+.top {
+  height: 120px;
+}
+
 /*top*/
 
 /*navbars*/
-.navbar { margin-top: -60px; z-index: 7;}
-.nav-link {color: #fff ; }
-.navbar-brand{ color:var(--maincolor)}
-.navbar-toggler{ border: 2PX solid rgb(64 64 59);}
-.navbar .bag::after {content: '0';background-color: var(--maincolor);
+.navbar {
+  margin-top: -60px;
+  z-index: 7;
+}
+
+.nav-link {
+  color: #fff;
+}
+
+.navbar-brand {
+  color: var(--maincolor)
+}
+
+.navbar-toggler {
+  border: 2PX solid rgb(64 64 59);
+}
+
+.navbar .bag::after {
+  content: '0';
+  background-color: var(--maincolor);
   color: #fff;
   font-size: 10px;
   width: 15px;
   height: 15px;
   line-height: 15px;
-  text-align:center;
+  text-align: center;
   border-radius: 50%;
   position: absolute;
-  top: 1;}
+  top: 1;
+}
+
 /*navbars*/
 
 /*Home*/
+
 /*header*/
-.overlay {position: absolute;
+.overlay {
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
-  z-index: 1;}
+  z-index: 1;
+}
 
 .carousel-caption {
   z-index: 2;
@@ -52,174 +120,262 @@ body {font-family:var(--mainfont); color: #fff; background-color: #1C1B19; font-
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;}
-
-.bg-transparent-custom{background-color: transparent;}
-.hovertransparentcustombg:hover{background-color: transparent;   } 
-/*Home*/
-
-.bg-middle-section{
-    background-image: url(./Home_img/background2.webp);
-    background-position:  center;
-    height: 95vh;
-    
+  text-align: center;
 }
-.Latest-Products .card{background-color: #fcd462; border: none;}
-.Pages-header{
-    background-image: url(./background.webp) ;
-    height: 50vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: -440px;
-    position: relative;
-z-index: 2;
-margin-top: -50px
+
+.bg-transparent-custom {
+  background-color: transparent;
+}
+
+.hovertransparentcustombg:hover {
+  background-color: transparent;
+}
+
+/*Collection-Arrived2*/
+.Collection-Arrived2:hover .a-button {
+  background-color: #1C1B19
+}
+
+.a-button:hover {
+  color: var(--maincolor);
+}
+
+
+.bg-middle-section {
+  background-image: url(./Home_img/background2.webp);
+  background-position: center;
+  height: 95vh;
 
 }
+
+.Latest-Products .card {
+  background-color: rgb(252, 212, 98);
+  border: none;
+}
+
+/*pages*/
+
+.Pages-header {
+  background-image: url(./background.webp);
+  height: 50vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -440px;
+  position: relative;
+  z-index: 2;
+  margin-top: -50px
+}
+
 .Pages-header::before {
-content: "";
-position: absolute;
-inset: 0;
-background-color:rgb(53,53,48,0.7); 
-z-index: 1;
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgb(53, 53, 48, 0.7);
+  z-index: 1;
 
 }
-.Pages-header-content{
-position: relative;
-z-index: 4;
+
+.Pages-header-content {
+  position: relative;
+  z-index: 4;
 }
 
-/* slider*/
-.slider-img {
-width: 16.6666%;
-}
-/* slider*/
+
 
 /* subscribe-section*/
 
 .subscribe-section {
-  background-color:rgba(53,53,48,255); /* نفس لون الخلفية */
+  background-color: rgba(53, 53, 48, 255);
+  /* نفس لون الخلفية */
 }
 
 .form-box {
-border: 15px solid #1C1B19;
-background-color:#1C1B19 ;
-max-width: 600px;
-width: 100%;
-}
-.subscribe-section p {
-  max-width: 700px; 
+  border: 15px solid #1C1B19;
+  background-color: #1C1B19;
+  max-width: 600px;
   width: 100%;
 }
 
-.email-input{background-color: #1C1B19;   flex-grow: 1;  }
-.subscribe-section .btn{background-color: var(--maincolor); color: #fff;}
-.subscribe-section .btn:hover{background-color: #fff; color: #1C1B19;}
+.subscribe-section p {
+  max-width: 700px;
+  width: 100%;
+}
+
+.email-input {
+  background-color: #1C1B19;
+  flex-grow: 1;
+}
+
+.subscribe-section .btn {
+  background-color: var(--maincolor);
+  color: #fff;
+}
+
+.subscribe-section .btn:hover {
+  background-color: #fff;
+  color: #1C1B19;
+}
 
 /*subscribe-section*/
 
 /*footer*/
-footer {background-color: #1C1B19;}
-.footer-icone{background-color: rgba(33,33,33,255);}
-.footer-icone:hover{background-color: var(--maincolor);}
+footer {
+  background-color: #1C1B19;
+}
+
+.footer-icone {
+  background-color: rgba(33, 33, 33, 255);
+}
+
+.footer-icone:hover {
+  background-color: var(--maincolor);
+}
+
 /*footer*/
 
-.back-to-top {
-  position: fixed;
-  bottom: 40px;
-  right: 40px;
-  width: 30px;
-  height: 30px;
-  z-index: 999;
-}
+
 
 
 /*details*/
-.color{width: 20px; height: 20px; border: none; outline: none; cursor: pointer;
-border-radius: 10px;}
-.color-one{background-color:rgb(189,32,49);}
-.color-two{background-color: var(--maincolor);}
-.color-three{background-color:rgba(57,57,197);}
-.color-four{background-color:rgb(50,152,50);}
-
-.Material{background-color:rgb(39,38,38) ; border: none; outline: none; cursor: pointer; color: #fff;}
-.Material:hover{background-color: var(--maincolor);}
-.cart-add{background-color:rgb(39,38,38) ; border: rgb(103,103,102) solid 1px; outline: none; cursor: pointer; color:rgb(103,103,102);}
-.cart-add:hover{color: var(--maincolor); border: var(--maincolor) solid 1px; }
-.pp{background-color: red;}
-
-.Related-Products{ background-color:rgba(53,53,48,255);}
-
-
-
-
-.card:hover .card-img-top{transform: scale(1.1) translateZ(0);}
-.card:hover .product-button{visibility: inherit;  transform: scale(1);}
-.card:hover .right-arrow{visibility: inherit;transform: scale(1);}
-.label{position: absolute;
-top: 10px; left: 10px;}
-.card-img-top{transition: transform 0.5s ease-in-out; }
-.product-button{position:absolute;top: 10px; left: 220px;
- visibility: hidden;  transform: scale(0.8);
-  transition: opacity 0.4s ease, transform 0.5s ease;}
-.right-arrow{visibility: hidden; transform: scale(0.8);transition: opacity 0.4s ease, transform 0.5s ease;}
- .form-check-input:checked {
-  background-color: red;
-  border-color: red;
-}
-.form-check-input:checked::before {
-  color: green;
-}
-
-/*هون غلط*/
-/* شكل الصح دايمًا ظاهر */
-.custom-checkbox {
-  appearance: none;
-  -webkit-appearance: none;
+.color {
   width: 20px;
   height: 20px;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  position: relative;
+  border: none;
+  outline: none;
   cursor: pointer;
+  border-radius: 10px;
 }
 
-/* علامة الصح */
-.custom-checkbox::after {
-  content: '✔';
-  position: absolute;
-  top: 0;
-  left: 3px;
-  font-size: 16px;
-  color: white;
+.color-one {
+  background-color: rgb(189, 32, 49);
 }
 
-/* الحالة غير المفعّلة: أحمر */
-.custom-checkbox:not(:checked) {
+.color-two {
+  background-color: var(--maincolor);
+}
+
+.color-three {
+  background-color: rgba(57, 57, 197);
+}
+
+.color-four {
+  background-color: rgb(50, 152, 50);
+}
+
+.Material {
+  background-color: rgb(39, 38, 38);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+.Material:hover {
+  background-color: var(--maincolor);
+}
+
+.cart-add {
+  background-color: rgb(39, 38, 38);
+  border: rgb(103, 103, 102) solid 1px;
+  outline: none;
+  cursor: pointer;
+  color: rgb(103, 103, 102);
+}
+
+.cart-add:hover {
+  color: var(--maincolor);
+  border: var(--maincolor) solid 1px;
+}
+
+.pp {
   background-color: red;
 }
 
-/* الحالة المفعّلة: أخضر */
-.custom-checkbox:checked {
-  background-color: green;
+.Related-Products {
+  background-color: rgba(53, 53, 48, 255);
 }
-/*في غلط
+
+
+
+
+.card:hover .card-img-top {
+  transform: scale(1.1) translateZ(0);
+}
+
+.card:hover .product-button {
+  visibility: inherit;
+  transform: scale(1);
+}
+
+.card:hover .product-button-shop {
+  visibility: inherit;
+  transform: scale(1);
+}
+
+.card:hover .right-arrow {
+  visibility: inherit;
+  transform: scale(1);
+}
+
+.label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.card {
+  position: relative;
+}
+
+.card-img-top {
+  transition: transform 0.5s ease-in-out;
+}
+
+.product-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  visibility: hidden;
+  transform: scale(0.8);
+  transition: opacity 0.4s ease, transform 0.5s ease;
+}
+
+.product-button-shop {
+  position: absolute;
+  top: 10px;
+  left: 170px;
+  visibility: hidden;
+  transform: scale(0.8);
+  transition: opacity 0.4s ease, transform 0.5s ease;
+}
+
+.right-arrow {
+  visibility: hidden;
+  transform: scale(0.8);
+  transition: opacity 0.4s ease, transform 0.5s ease;
+}
+
+
+
+
 
 
 /*login*/
-.login-bg{
+.login-bg {
   background-image: url(./login.webp/login.webp);
   height: 99vh;
-    background-repeat: no-repeat;
-    background-position: right center;
-  
+  background-repeat: no-repeat;
+  background-position: right center;
+
 }
 
 /*login*/
 
 
 
-.border-main-color{border: #fcd462 solid 1px;}
+.border-main-color {
+  border: #fcd462 solid 1px;
+}
 
 
 /*طبقه شفافه*/
@@ -235,69 +391,229 @@ top: 10px; left: 10px;}
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* أسود شفاف */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* أسود شفاف */
   z-index: 1;
 }
 
-.overlay-black > * {
+.overlay-black>* {
   position: relative;
   z-index: 2;
 }
 
+.overlay-black:hover::before {
+  background-color: rgba(94 81 42 / 86%);
+  /* أصفر شفاف */
+}
 
 
-/*طبقه شفافه*/
+
+
+
 
 
 /*home*/
-.New-Rings{background-image: url(./Home_img/New\ Rings.webp);
-height: 50vh; background-position: center; background-repeat: no-repeat; }
-.Copper-Bangle{background-image: url(./Home_img/Copper\ Bangle.webp);
-height: 50vh; background-position: center; background-repeat: no-repeat;}
-.Big-Necklace{background-image: url(./Home_img/Big\ Necklace.webp);
-height: 50vh; background-position: center; background-repeat: no-repeat;}
-.Crystal-Jewelry{background-image: url(./Home_img/Crystal\ Jewelry.webp);
-height: 50vh; background-position: center; background-repeat: no-repeat;}
+.New-Rings {
+  background-image: url(./Home_img/New\ Rings.webp);
+  height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Copper-Bangle {
+  background-image: url(./Home_img/Copper\ Bangle.webp);
+  height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Big-Necklace {
+  background-image: url(./Home_img/Big\ Necklace.webp);
+  height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Crystal-Jewelry {
+  background-image: url(./Home_img/Crystal\ Jewelry.webp);
+  height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /*Jewel On Sale*/
-.Jewel-On-Sale{background-image: url(./Home_img/Jewel\ On\ Sale.webp);
-background-size: cover; background-repeat: no-repeat;}
-.Agonfly-Jewelry{background-image: url(./Home_img/News\ Feeds\ \(2\).webp);
-background-size: cover; height: 35vh; overflow: hidden; transition: background-size 0.5s ease;   background-size: 100%;  background-position: center; background-repeat: no-repeat;}
-.Agonfly-Jewelry:hover{background-size: 110%;}
+.Jewel-On-Sale {
+  background-image: url(./Home_img/Jewel\ On\ Sale.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
-.Coin-Gold-Necklace{background-image: url(./Home_img/News\ Feeds\ \(3\).webp);
-background-size: cover;height: 35vh;overflow: hidden; transition: background-size 0.5s ease;   background-size: 100%;  background-position: center; background-repeat: no-repeat;}
-.Coin-Gold-Necklace:hover{background-size: 110%;}
-.Gold-Bracelet-Hall-Of-Fame{background-image: url(./Home_img/Gold\ Bracelet\ Hall\ Of\ Fame.webp);
-background-size: cover;height: 35vh;overflow: hidden; transition: background-size 0.5s ease;   background-size: 100%;  background-position: center; background-repeat: no-repeat;}
-.Gold-Bracelet-Hall-Of-Fame:hover{background-size: 110%;}
-.Ariel-Ring{background-image: url(./Home_img/Ariel\ Ring.webp);
-background-size: cover; height: 72vh;overflow: hidden; transition: background-size 0.5s ease;   background-size: 100%;  background-position: center; background-repeat: no-repeat;}
-.Ariel-Ring:hover{background-size: 110%;}
+.Agonfly-Jewelry {
+  background-image: url(./Home_img/News\ Feeds\ \(2\).webp);
+  background-size: cover;
+  height: 35vh;
+  overflow: hidden;
+  transition: background-size 0.5s ease;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.Agonfly-Jewelry:hover {
+  background-size: 110%;
+}
+
+.Coin-Gold-Necklace {
+  background-image: url(./Home_img/News\ Feeds\ \(3\).webp);
+  background-size: cover;
+  height: 35vh;
+  overflow: hidden;
+  transition: background-size 0.5s ease;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.Coin-Gold-Necklace:hover {
+  background-size: 110%;
+}
+
+.Gold-Bracelet-Hall-Of-Fame {
+  background-image: url(./Home_img/Gold\ Bracelet\ Hall\ Of\ Fame.webp);
+  background-size: cover;
+  height: 35vh;
+  overflow: hidden;
+  transition: background-size 0.5s ease;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.Gold-Bracelet-Hall-Of-Fame:hover {
+  background-size: 110%;
+}
+
+.Ariel-Ring {
+  background-image: url(./Home_img/Ariel\ Ring.webp);
+  background-size: cover;
+  height: 72vh;
+  overflow: hidden;
+  transition: background-size 0.5s ease;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.Ariel-Ring:hover {
+  background-size: 110%;
+}
 
 /*Jewel On Sale*/
-.custom-border{border: rgba(64,64,59,255) solid 2px;}
-.Our-Best-Feature-1{background-image: url(./Home_img/Our-Best-Feature\ \(2\).webp);
-  height: 51.5vh; background-repeat: no-repeat; background-size: cover;}
-.Our-Best-Feature-2{background-image: url(./Home_img/Our-Best-Feature\ \(1\).webp);
-height: 51.5vh; background-repeat: no-repeat; background-size: cover;}
-.Our-Best-Feature-3{background-image: url(./Home_img/Our-Best-Feature\ \(3\).webp);
-height: 51.5vh; background-repeat: no-repeat; background-size: cover;}
-.desc-Our-Best-Feature {display: none;}
-.Our-Best-Feature-1:hover { background-image: none; background-color:rgb(53,53,48);}
-.Our-Best-Feature-2:hover {background-image: none; background-color:rgb(53,53,48);}
-.Our-Best-Feature-3:hover {background-image: none; background-color:rgb(53,53,48);}
+.custom-border {
+  border: rgba(64, 64, 59, 255) solid 2px;
+}
 
-.Our-Best-Feature-1:hover .desc-Our-Best-Feature{display:inline-block;}
-.Our-Best-Feature-2:hover .desc-Our-Best-Feature{display:inline-block;}
-.Our-Best-Feature-3:hover .desc-Our-Best-Feature{display:inline-block;}
+.Our-Best-Feature-1 {
+  background-image: url(./Home_img/Our-Best-Feature\ \(2\).webp);
+  height: 51.5vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.Our-Best-Feature-2 {
+  background-image: url(./Home_img/Our-Best-Feature\ \(1\).webp);
+  height: 51.5vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.Our-Best-Feature-3 {
+  background-image: url(./Home_img/Our-Best-Feature\ \(3\).webp);
+  height: 51.5vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.desc-Our-Best-Feature {
+  display: none;
+}
+
+.Our-Best-Feature-1:hover {
+  background-image: none;
+  background-color: rgb(53, 53, 48);
+}
+
+.Our-Best-Feature-2:hover {
+  background-image: none;
+  background-color: rgb(53, 53, 48);
+}
+
+.Our-Best-Feature-3:hover {
+  background-image: none;
+  background-color: rgb(53, 53, 48);
+}
+
+.Our-Best-Feature-1:hover .desc-Our-Best-Feature {
+  display: inline-block;
+}
+
+.Our-Best-Feature-2:hover .desc-Our-Best-Feature {
+  display: inline-block;
+}
+
+.Our-Best-Feature-3:hover .desc-Our-Best-Feature {
+  display: inline-block;
+}
+
+
+/*diamond */
+.pagination .page-item .page-link {
+  background-color: rgb(53, 53, 48) !important;
+  border-color: rgb(53, 53, 48) !important;
+  color: #fff !important;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #fcd462 !important;
+  border-color: #fcd462 !important;
+  color: #fff !important;
+}
+
+
+.form-check-input.custom-checkbox {
+        width: 20px;
+        height: 20px;
+        background-color: var(--maincolor);
+        border: 2px solid rgb(53, 53, 48);
+    }
+
+    .form-check-input.custom-checkbox:checked {
+        background-color: #1C1B19;
+        border-color: rgb(53, 53, 48)
+    }
+
+/* slider*/
+.slider-img {
+  width: 16.6666%;}
+/* slider*/
 
 /*Home footer*/
-.home-footer{background-image: url(./Home_img/footer\ background.webp);
-background-size: cover;}
-footer {background-color: #1C1B19;}
-.footer-icone-home:hover{background-color: var(--maincolor);}
+.home-footer {
+  background-image: url(./Home_img/footer\ background.webp);
+  background-size: cover;
+}
+.footer-icone-home:hover {
+  background-color: var(--maincolor);
+}
 /*Home footer*/
+
 
 /*back to up*/
 .back-to-top {
@@ -306,6 +622,7 @@ footer {background-color: #1C1B19;}
   right: 40px;
   width: 30px;
   height: 30px;
-  z-index: 999;}
-/*back to up*/
+  z-index: 999;
+}
 
+/*back to up*/
