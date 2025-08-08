@@ -6,6 +6,9 @@
 a {text-decoration: none;color: #fff;}
 li {list-style-type: none;}
 body {font-family: var(--mainfont);color: #fff;background-color: #1C1B19;font-weight: 700;}
+ input.form-control {
+  color:gray !important;
+}
 
 .main-color {color: var(--maincolor);}
 .bg-main-color {background-color: var(--maincolor);}
@@ -64,7 +67,7 @@ body {font-family: var(--mainfont);color: #fff;background-color: #1C1B19;font-we
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.6);
   z-index: 1;}
 .carousel-caption {
   z-index: 2;
@@ -175,6 +178,8 @@ body {font-family: var(--mainfont);color: #fff;background-color: #1C1B19;font-we
 /*Latest Products*/
 
 /*Jewel On Sale*/
+.Jewel-On-Sale-link{color:rgb(128, 128, 128) ;}
+.Jewel-On-Sale-link:hover{color: #fff; border: #fff solid 1px;}
 .Jewel-On-Sale {
   background-image: url(./Home_img/Jewel\ On\ Sale.webp);
   background-size: cover;
@@ -226,22 +231,22 @@ body {font-family: var(--mainfont);color: #fff;background-color: #1C1B19;font-we
 /*Jewel On Sale*/
 
 /*Our Best Feature*/
-
+.custom-height{height: 52vh;}
 .Our-Best-Feature-1 {
   background-image: url(./Home_img/Our-Best-Feature\ \(2\).webp);
-  height: 51.5vh;
+  height: 52vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;}
 .Our-Best-Feature-2 {
   background-image: url(./Home_img/Our-Best-Feature\ \(1\).webp);
-  height: 51.5vh;
+  height: 52vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;}
 .Our-Best-Feature-3 {
   background-image: url(./Home_img/Our-Best-Feature\ \(3\).webp);
-  height: 51.5vh;
+  height: 52vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;}
@@ -329,8 +334,19 @@ body {font-family: var(--mainfont);color: #fff;background-color: #1C1B19;font-we
   background-color: var(--maincolor);}
 /*footer*/
 /*-----------------pages-----------------------------*/
+/*Categories*/
+.hovertograybg:hover{background-color:rgb(53, 53, 48) ;}
 
+.TrendingProduct:hover .right-arrow {
+  visibility: inherit;
+  transform: scale(1);}
+/*Categories*/
 /*shop detail*/
+.Product-img{position: relative;}
+.Product-label {
+  position: absolute;
+  top: 0px;
+  right: 0px;}
 .color {
   width: 20px;
   height: 20px;
@@ -349,15 +365,13 @@ body {font-family: var(--mainfont);color: #fff;background-color: #1C1B19;font-we
 
   
 .cart-add {
-  background-color: rgb(39, 38, 38);
-  outline: none;
-  cursor: pointer;
- }
+  background-color: rgb(39, 38, 38);}
 .cart-add:hover {
-  color: var(--maincolor);
-  border: var(--maincolor) solid 1px;}
+  color: var(--maincolor) !important;
+  border: var(--maincolor) solid 1px;
+ box-shadow: 0 4px 10px rgba(252,212,98,0.4);}
 
-  .Product-details-link:hover{color: #fff;}
+  .Product-details-link:hover{color: #fff !important;}
   /*shop detail*/
 
 
@@ -367,7 +381,7 @@ body {font-family: var(--mainfont);color: #fff;background-color: #1C1B19;font-we
   border-color: rgb(53, 53, 48) !important;
   color: #fff !important;}
 .pagination .page-item.active .page-link {
-  background-color: #fcd462 !important;
+  background-color: rgb(252, 212, 98) !important;
   border-color: #fcd462 !important;
   color: #fff !important;}
 .form-check-input.custom-checkbox {
@@ -385,7 +399,32 @@ body {font-family: var(--mainfont);color: #fff;background-color: #1C1B19;font-we
   background-image: url(./login.webp/login.webp);
   height: 99vh;
   background-repeat: no-repeat;
-  background-position: right center;}
+  background-position: center;}
+
+  .overlay-black-login {
+  position: relative;
+  overflow: hidden;}
+.overlay-black-login::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;}
+.overlay-black-login>* {
+  position: relative;
+  z-index: 2;}
+
+  .login-btn:hover{border: var(--maincolor) solid 1px; color: var(--maincolor)!important;}
+  .facebook-btn:hover{color: #fff !important; border: var(--maincolor) solid 1px !important;}
+  .google-btn:hover{color: var(--maincolor) !important; border: var(--maincolor) solid 1px !important;}
+
 
 /*login*/
+
+
+
+
 

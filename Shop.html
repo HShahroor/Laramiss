@@ -4,9 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Laramiss - A luxurious jewelry store offering elegant, modern designs that highlight feminine beauty and style.">
-      <title>Laramiss Shop</title>
-  <link rel="icon" href="./icone/logo.png" type="image/png" />
+    <meta name="description"
+        content="Laramiss - A luxurious jewelry store offering elegant, modern designs that highlight feminine beauty and style.">
+    <title>Laramiss Shop</title>
+    <link rel="icon" href="./icone/logo.png" type="image/png" />
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -123,20 +124,23 @@
 
     <section class="Product-details">
         <div class="container p-0 p-md-5">
-            <div class="row align-items-center justify-content-center">
-                <div class="col-lg-6 ">
-                    <div>
-                        <img src="./Shop Detail_img/Ring.webp" alt="Product-img">
-                        <div class="d-flex">
-                            <img src="./Shop Detail_img/detail (1).webp" alt="Product-img">
-                            <img src="./Shop Detail_img/detail (2).webp" alt="Product-img">
-                            <img src="./Shop Detail_img/detail (3).webp" alt="Product-img">
-                            <img src="./Shop Detail_img/detail (4).webp" alt="Product-img">
-                            <img src="./Shop Detail_img/detail (1).webp" alt="Product-img">
+            <div class="row p-5 align-items-center justify-content-center g-5">
+                <div class="col-lg-5 ">
+                    <div class="Product-img">
+                        <img src="./Shop Detail_img/Ring.webp" class="img-fluid" alt="Product-img">
+                        <div class="Product-label subfont text-center ">
+                            <span class="bg-main-color text-white px-3 py-1"> Sale</span>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <img src="./Shop Detail_img/detail (1).webp" class="img-fluid" alt="Product-img">
+                            <img src="./Shop Detail_img/detail (2).webp" class="img-fluid" alt="Product-img">
+                            <img src="./Shop Detail_img/detail (3).webp" class="img-fluid" alt="Product-img">
+                            <img src="./Shop Detail_img/detail (4).webp" class="img-fluid" alt="Product-img">
+                            <img src="./Shop Detail_img/detail (1).webp" class="img-fluid" alt="Product-img">
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-7">
                     <div>
                         <h3>Handmade Golden Ring</h3>
                         <div class="d-flex">
@@ -151,7 +155,7 @@
                             <span class="main-color fs-5">$390</span>
                             <span class="text-decoration-line-through text-white-50 fs-6">$480</span>
                         </div>
-                        <div class="d-flex gap-3">
+                        <div class="d-flex gap-3 fw-normal">
                             <p>Availability:</p>
                             <p class="text-success">In Stock</p>
                             <p>SKU:</p>
@@ -162,9 +166,9 @@
                             veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
                         </p>
 
-                        <div>
-                            <h4 class="subfont">color</h4>
-                            <div>
+                        <div class="py-3">
+                            <h4 class="subfont fs-6">Color</h4>
+                            <div class="d-flex gap-2">
                                 <button class="color bg-danger"></button>
                                 <button class="color bg-main-color "></button>
                                 <button class="color bg-primary "></button>
@@ -172,48 +176,44 @@
                             </div>
                         </div>
 
-                        <div>
-                            <h4 class="subfont">Material</h4>
-                            <div class="mb-3">
-                                <div class="subfont">
-                                    <button class="Material hovertomaincolorbg  py-2 px-4">Gold</button>
-                                    <button class="Material hovertomaincolorbg py-2 px-4">Diamond</button>
-                                    <button class="Material hovertomaincolorbg py-2 px-4">Silver</button>
-                                    <button class="Material hovertomaincolorbg py-2 px-4">Stone</button>
-                                </div>
+                        <div class="py-3">
+                            <h4 class="subfont fs-6">Material</h4>
+                            <div class="d-flex gap-2 flex-wrap subfont">
+                                <button class="Material hovertomaincolorbg  py-2 px-4">Gold</button>
+                                <button class="Material hovertomaincolorbg py-2 px-4">Diamond</button>
+                                <button class="Material hovertomaincolorbg py-2 px-4">Silver</button>
+                                <button class="Material hovertomaincolorbg py-2 px-4">Stone</button>
                             </div>
-
                         </div>
 
-                        <div class="d-flex align-items-center  subfont gap-3 mb-3">
-                            <div>
-                                <nav aria-label="...">
-                                    <ul class="pagination pagination-lg m-0 p-0  ">
-                                           <li class="page-item"><a class="page-link rounded-0" href="#">-</a></li>
-                                        <li class="page-item"><a class="page-link rounded-0 " href="#">1</a></li>
-                                        <li class="page-item"><a class="page-link rounded-0" href="#">+</a></li>
-                                    </ul>
-                                </nav>
+                        <div class="d-flex flex-column flex-sm-row align-items-center   subfont gap-4 mb-3">
+                            <div class="d-flex Material  align-items-center ">
+                                <button type="button" class="btn py-3 text-light hovertomaincolorbg rounded-0 ">
+                                    -</button>
+                                <input type="text" class=" text-center Material" name="name" value="1"  >
+                                <button type="button" class="btn py-3 text-light hovertomaincolorbg rounded-0">
+                                    +</button>
                             </div>
+
                             <div>
-                                <button class="cart-add py-3 custom-border text-white-50 px-4">ADD TO CART</button>
+                                <button class="btn  rounded-0 cart-add subfont fw-bold py-3 custom-border text-white-50 px-5">ADD TO CART</button>
                             </div>
                         </div>
 
                         <div class="d-flex ">
                             <h6>Category:</h6>
                             <ul class="d-flex subfont fw-normal gap-2">
-                                <li><a href="#" class="text-white-50">Bracelets</a></li>
-                                <li><a href="#" class="text-white-50"> Rings</a></li>
-                                <li><a href="#" class="text-white-50"> Silver Bracelet</a></li>
+                                <li><a href="#" class="text-white-50 Product-details-link">Bracelets</a></li>
+                                <li><a href="#" class="text-white-50 Product-details-link"> Rings</a></li>
+                                <li><a href="#" class="text-white-50 Product-details-link"> Silver Bracelet</a></li>
                             </ul>
                         </div>
                         <div class="d-flex  ">
                             <h6>Tags:</h6>
                             <ul class="d-flex subfont fw-normal gap-2">
-                                <li><a href="#" class="text-white-50">rings</a></li>
-                                <li><a href="#" class="text-white-50"> necklaces</a></li>
-                                <li><a href="#" class="text-white-50"> bracelet</a></li>
+                                <li><a href="#" class="text-white-50 Product-details-link">rings</a></li>
+                                <li><a href="#" class="text-white-50 Product-details-link"> necklaces</a></li>
+                                <li><a href="#" class="text-white-50 Product-details-link"> bracelet</a></li>
                             </ul>
                         </div>
 
@@ -221,14 +221,20 @@
                     </div>
                 </div>
                 <div class="subfont text-white-50 fw-light">
-                    <div >
+                    <div>
                         <ul class="d-flex gap-3 justify-content-center ">
                             <li class="main-color Product-details-link">Description</li>
                             <li class="Product-details-link">Reviews(3)</li>
                             <li class="Product-details-link">Additional info</li>
                         </ul>
                     </div>
-                    <p >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam sit alias necessitatibus, numquam veritatis quia vel debitis animi error! Esse laudantium provident quas sequi nulla optio modi deleniti distinctio eaque? Saepe, ad accusantium? Expedita, cupiditate neque commodi aperiam totam explicabo cumque, illo magnam molestias nihil iure corrupti error. Quae sunt soluta, repudiandae inventore repellat obcaecati doloremque fugit eos vero laudantium id cupiditate iste ipsa cumque incidunt labore quisquam ducimus cum? Reprehenderit inventore vitae, illo ab cum rem tempora pariatur consequuntur aliquam aperiam officiis veritatis accusamus quas cumque cupiditate est animi perferendis odio explicabo voluptatum vero dolorem eum! Laborum, culpa fuga?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam sit alias necessitatibus, numquam
+                        veritatis quia vel debitis animi error! Esse laudantium provident quas sequi nulla optio modi
+                        deleniti distinctio eaque? Saepe, ad accusantium? Expedita, cupiditate neque commodi aperiam
+                        totam explicabo cumque, illo magnam molestias nihil iure corrupti error. Quae sunt soluta,
+                        repudiandae inventore repellat obcaecati doloremque fugit eos vero laudantium id cupiditate iste
+                        ipsa cumque incidunt labore quisquam ducimus cum? Reprehenderit inventore vitae, illo ab cum rem
+                    </p>
                 </div>
             </div>
         </div>
@@ -435,8 +441,9 @@
     </footer>
 
     <a href="#top" class="btn back-to-top rounded-0">
-        <img src="./Home_img/up-arrow.svg" class="bg-main-color p-2" alt="back to top>
+        <img src="./Home_img/up-arrow.svg" class="bg-main-color p-2" alt="back to top">
     </a>
+
 
     <!-- bootstrap js 5.3 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
