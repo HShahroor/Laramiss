@@ -5,10 +5,8 @@
 
 a {text-decoration: none;color: #fff;}
 li {list-style-type: none;}
-body {font-family: var(--mainfont);color: #fff;background-color: #1C1B19;font-weight: 700;}
- input.form-control {
-  color:gray !important;
-}
+body {font-family: var(--mainfont);color: #fff;background-color: #1C1B19;font-weight: 700; }
+input.form-control {color:gray !important;}
 
 .main-color {color: var(--maincolor);}
 .bg-main-color {background-color: var(--maincolor);}
@@ -23,11 +21,20 @@ body {font-family: var(--mainfont);color: #fff;background-color: #1C1B19;font-we
 .border-main-color {border: #fcd462 solid 1px;}
 
 /*top*/
-.top {height: 120px;}
+.top {
+ position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5;
+overflow: hidden; }
 /*top*/
+.top-pages{height: 110px;
+overflow: hidden;}
 
 /*navbars*/
-.navbar {margin-top: -60px;z-index: 7;}
+.navbar {margin-top: -60px;
+top: 110px; z-index: 5; }
 .nav-link {color: #fff;}
 .navbar-brand {color: var(--maincolor)}
 .navbar-toggler {border: 2PX solid rgb(64 64 59);}
@@ -43,6 +50,10 @@ body {font-family: var(--mainfont);color: #fff;background-color: #1C1B19;font-we
   border-radius: 50%;
   position: absolute;
   top: 1;}
+  .navbar-scroll{background-color: rgb(53, 53, 48) ;
+  top: 0;
+  left: 0;
+position: sticky;}
 /*navbars*/
 
 /*offcanvas*/
@@ -61,6 +72,9 @@ body {font-family: var(--mainfont);color: #fff;background-color: #1C1B19;font-we
 
 /*-----------------Home-----------------------------*/
 /*header*/
+header {
+  margin-top: -45px; 
+}
 .overlay {
   position: absolute;
   top: 0;
@@ -156,7 +170,7 @@ body {font-family: var(--mainfont);color: #fff;background-color: #1C1B19;font-we
 .product-button-shop {
   position: absolute;
   top: 10px;
-  left: 170px;
+  left: 80%;
   visibility: hidden;
   transform: scale(0.8);
   transition: opacity 0.4s ease, transform 0.5s ease;}
@@ -288,7 +302,7 @@ body {font-family: var(--mainfont);color: #fff;background-color: #1C1B19;font-we
   background-position: -440px;
   position: relative;
   z-index: 2;
-  margin-top: -50px}
+  margin-top: -57px}
 .Pages-header::before {
   content: "";
   position: absolute;
@@ -336,11 +350,11 @@ body {font-family: var(--mainfont);color: #fff;background-color: #1C1B19;font-we
 /*-----------------pages-----------------------------*/
 /*Categories*/
 .hovertograybg:hover{background-color:rgb(53, 53, 48) ;}
-
 .TrendingProduct:hover .right-arrow {
   visibility: inherit;
   transform: scale(1);}
 /*Categories*/
+
 /*shop detail*/
 .Product-img{position: relative;}
 .Product-label {
@@ -354,23 +368,18 @@ body {font-family: var(--mainfont);color: #fff;background-color: #1C1B19;font-we
   outline: none;
   cursor: pointer;
   border-radius: 10px;}
-
-
 .Material {
   background-color: rgb(39, 38, 38);
   border: none;
   outline: none;
   cursor: pointer;
   color: #fff;}
-
-  
 .cart-add {
   background-color: rgb(39, 38, 38);}
 .cart-add:hover {
   color: var(--maincolor) !important;
   border: var(--maincolor) solid 1px;
- box-shadow: 0 4px 10px rgba(252,212,98,0.4);}
-
+  box-shadow: 0 4px 10px rgba(252,212,98,0.4);}
   .Product-details-link:hover{color: #fff !important;}
   /*shop detail*/
 
@@ -400,7 +409,6 @@ body {font-family: var(--mainfont);color: #fff;background-color: #1C1B19;font-we
   height: 99vh;
   background-repeat: no-repeat;
   background-position: center;}
-
   .overlay-black-login {
   position: relative;
   overflow: hidden;}
@@ -416,12 +424,9 @@ body {font-family: var(--mainfont);color: #fff;background-color: #1C1B19;font-we
 .overlay-black-login>* {
   position: relative;
   z-index: 2;}
-
   .login-btn:hover{border: var(--maincolor) solid 1px; color: var(--maincolor)!important;}
   .facebook-btn:hover{color: #fff !important; border: var(--maincolor) solid 1px !important;}
   .google-btn:hover{color: var(--maincolor) !important; border: var(--maincolor) solid 1px !important;}
-
-
 /*login*/
 
 
