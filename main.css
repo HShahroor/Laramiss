@@ -22,14 +22,14 @@ input.form-control {color:gray !important;}
 
 /*top*/
 .top {
- position: absolute;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 5;
 overflow: hidden; }
 /*top*/
-.top-pages{height: 110px;
+.top-pages{height: 120px;
 overflow: hidden;}
 
 /*navbars*/
@@ -53,7 +53,12 @@ top: 110px; z-index: 5; }
   .navbar-scroll{background-color: rgb(53, 53, 48) ;
   top: 0;
   left: 0;
-position: sticky;}
+position: sticky;
+animation: slidedown 1s ;}
+@keyframes slidedown{
+    from{transform: translateY(-100%); }
+    to{transform: translateY(0%);}
+}
 /*navbars*/
 
 /*offcanvas*/
@@ -245,7 +250,7 @@ header {
 /*Jewel On Sale*/
 
 /*Our Best Feature*/
-.custom-height{height: 52vh;}
+.custom-height{height: 52vh; overflow-y: hidden;}
 .Our-Best-Feature-1 {
   background-image: url(./Home_img/Our-Best-Feature\ \(2\).webp);
   height: 52vh;
